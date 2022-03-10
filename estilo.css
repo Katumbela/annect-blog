@@ -1,0 +1,125 @@
+*{
+    font-family: Century Gothic;
+}
+
+.comentario{
+    background-color:rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 2px;
+    
+}
+
+.texto{
+    border-radius: 10px;
+}
+.comentarr{
+    border-radius: 8px;
+    background: none;
+    color: rgb(31, 63, 100);
+    transition: 0.8s;
+    border-color: rgb(38, 75, 110);
+}
+
+.comentarr:hover{
+    background: none;
+    transition: 0.8s;
+    color: rgb(31, 63, 100);
+}
+.comentarr:focus{
+    transform: scale(0.9);
+}
+
+.comentario b{
+    color: rgb(38, 75, 110);
+    text-transform: uppercase;
+}
+#timer{
+    background: linear-gradient(45deg, rgb(72, 72, 175) , white, rgb(33, 59, 107), white, rgb(28, 70, 126));
+    padding: 2%;
+    font-size: 20px;
+    color: seashell;
+    box-shadow: 2px 3px 2px  steelblue;
+    margin-bottom: 5%;
+    letter-spacing: 2px;
+    border-radius: 9px;
+    transition: 0.7s;
+}
+
+#timer:hover{
+    transition: 0.7s;
+    transform: scale( -1, 1);
+    background-color: rgb(49, 74, 94);
+    color: white;
+}
+.preco{
+
+    box-shadow: 1px 1px 5px  royalblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav img{
+    border-radius: 18px;
+    padding: 4px;
+}
+.form{
+    background-color: white;
+    
+}
+
+.card{
+    margin-top: 4%;
+}
+.email2{
+    border-color: rgb(206, 48, 48);
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 1px 3px 3px 2px rgb(202, 115, 115);
+    color: rgb(206, 48, 48);
+    transition: 0.5s;
+}
+.email2:focus{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.email{
+    border-color: rgb(25, 119, 143);
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 1px 3px 3px 2px rgb(102, 155, 168);
+    color: rgb(25, 119, 143);
+}
+#insc{
+    margin-top: -2px;
+}
+
+figcaption{
+    letter-spacing: 5px;
+    margin-top: 1%;
+    margin-bottom: -5%;
+}
+.btn-info{
+    margin-top: 5px;
+}
+
+.banner{
+    border-radius: 30px;
+    animation: mover 2s ease-out infinite;
+}
+.nav h3{
+    color: rgb(236, 236, 236);
+    margin-top: 8px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px azure;
+    text-shadow: 1px 2px 15px  rgb(105, 250, 255);
+}
+
+@keyframes mover {
+     20%{
+        transform: translateY(60px);
+    }
+
+    30%{
+        transform: translateY(40px);
+    }
+}

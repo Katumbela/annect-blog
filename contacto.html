@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto - Annect</title>
+<script src="jquery.js"></script>
+<script data-ad-client="ca-pub-1921695646246423" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<link rel="icon" type="icones/icon1.jpg" href="icones/icon1.jpg"/>
+
+<link rel="stylesheet" href="bootstrap/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
+<script src="js/bootstrap.js"></script>
+<script src="arquivo.js"></script>
+<link rel="stylesheet" href="estilo.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="jquery.min.js"></script>
+<style>    
+    body {
+        color: #333;
+        background: #fafafa;
+        font-family: "Patua One", sans-serif;
+    }
+    .contact-form {
+        padding: 50px;
+        margin: 30px 0;
+    }
+    .contact-form h1 {
+        color: #19a3bc;
+        font-weight: bold;
+        margin: 0 0 15px;
+    }
+    .contact-form .form-control, .contact-form .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .contact-form .form-control:focus {
+        border-color: #197bbc;
+    }
+    .contact-form .btn-primary {
+        color: #fff;
+        min-width: 150px;
+        font-size: 16px;
+        background: #198ebc;
+        border: none;
+    }
+    .contact-form .btn-primary:hover {
+        background: #1583a4; 
+    }
+    .contact-form .btn i {
+        margin-right: 5px;
+    }
+    .contact-form label {
+        opacity: 0.7;
+    }
+    .contact-form textarea {
+        resize: vertical;
+    }
+    .hint-text {
+        font-size: 15px;
+        padding-bottom: 20px;
+        opacity: 0.6;
+    }
+</style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg  navbar-light bg-dark"> 
+        <a class="navbar-brand" href="index.html" style="color: #f1f1f1;"><b style="color: #f1f1f1;"> ANNECT</b></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span style="color: #f1f1f1;" class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <ul  class="navbar-nav mr-auto"> 
+                <li class="nav-item active"> 
+                    <a style="color: #f1f1f1;" class="nav-link" href="http://annect.ga">Home <span class="sr-only">(current)</span>
+                    </a> </li> 
+                    <li class="nav-item"> <a style="color: #f1f1f1;" class="nav-link" href="https://mobile.annect.ga">Carteira</a> </li> 
+                    <li class="nav-item dropdown"> <a style="color: #f1f1f1;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Redes Sociais </a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="https://www.facebook.com/joao.afonso.katombela">Facebook</a>
+                            <a class="dropdown-item" href="https://twitter.com/joao_katumbela">Twitter</a> 
+                            <div class="dropdown-divider"></div> 
+                            <a  class="dropdown-item" href="https://linkedin.com/joao-afonso-katombela">LinkedIn</a> 
+                        </div> 
+                    </li> <li class="nav-item"> <a style="color: #f1f1f1;" class="nav-link disabled" href="#">Annect Wallet</a> </li> 
+                    </ul>
+                     <form method="post" action="inscreverse.php" class="form-inline my-2 my-lg-0"> 
+                         <input class="form-control mr-sm-2" name="msg_anonimo" type="search" placeholder="Feed anônimo" aria-label="Search"> 
+                         <button class="btn btn-outline-success my-2 my-sm-0" name="anonimo" type="Enviar">Enviar</button>
+                         </form>
+                         </div> 
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <p class="hint-text">Esteja a vontade para expôr suas dúvidas ou outras, escreva pra nós .</p>       
+                <form action="inscreverse.php" method="post">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputName">Nome</label>
+                                <input type="text" name="nome" class="form-control" id="inputName" required>
+                            </div>
+                        </div>                
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" name="email" class="form-control" id="inputEmail" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputPhone">Phone</label>
+                                <input type="text" name="phone" class="form-control" id="inputPhone" required>
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="form-group">
+                        <label for="inputSubject">Assunto</label>
+                        <input type="text" name="Tema" class="form-control" id="inputSubject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Mensagem</label>
+                        <textarea class="form-control" name="msg" id="inputMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" name="contactar" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+   
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <a href="http://facebook.com/joao.afonso.katombela">Facebook</a><br>
+                <a href="http://twitter.com/joao_katumbela">Twitter</a><br>
+                <a href="contacto.html">Contacto</a><br>
+                <a href="sobre.html">Sobre Nós</a><br>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+                <a href="http://linkedin.com/joao-afonso-katombela">LinkedIn</a><br>
+                <a href="http://github.com/katumbela">GitHub</a><br>
+                <a href="mailto:annectwallet@gmail.com">annectwallet@gmail.com</a><br>
+                <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+            
+            </div>
+        </div>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://www.annect.ga/"> www.annect.ga </a> <a href="politicas_de_privacidade.html">Politicas de Privacidade</a> | Made By: <a href="http://facebook.com/joao.afonso.katumbela">Joao Afonso Katombela</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>

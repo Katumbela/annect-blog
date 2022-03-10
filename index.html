@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annect - Area Educação</title>
+    <script src="jquery.js"></script>
+    <script data-ad-client="ca-pub-1921695646246423" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<link rel="icon" type="icones/icon1.jpg" href="icones/icon1.jpg"/>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="arquivo.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+</head>
+<style>
+    .formulario{
+        background: #101919;
+        
+    }
+    .form2{
+    width: 300px;
+    background: #101919;
+    text-align: center;
+}
+    .cookieConsentContainer{
+    width: 300px;
+    
+    position: absolute !important;
+    border-radius: 5px;
+    color: rgb(183, 214, 255);
+    background: #101919;
+    text-align: center;
+}
+.til{
+    color: rgb(250, 251, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.form2 input[type ="text"], .form textarea{
+    border:0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+#message[type ="text"], .form textarea{
+    border:0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.form2 input[type ="text"]:focus, .form textarea:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.form2 button:hover{
+    background: #2ecc71;
+}
+.form2 button{
+    border:0; 
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+ 
+    padding:14px, 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.navbar-brand{
+    color: blanchedalmond;
+}
+.form button:hover{
+    background: #2ecc71;
+}
+.form button{
+    border:0; 
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+ 
+    padding:14px, 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}.cookieConsen­tContainer{
+    z-index:999;
+    width:350px;
+    min-height:20px;
+    box-sizing:border-box;
+    padding:30px 30px 30px 30px;
+    background:#232323;
+    overflow:hidden;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    display:none
+}
+
+.cookieConsentContainer .cookieTitle a{
+    font-family:OpenSans,arial,sans-serif;
+    color:#fff;
+    font-size:22px;
+    line-height:20px;
+    display:block
+}
+
+.cookieConsentContainer .cookieDesc p{
+    margin:0;padding:0;
+    font-family:OpenSans,arial,sans-serif;
+    color:#fff;
+    font-size:13px;
+    line-height:20px;
+    display:block;
+    margin: top 10px;
+}
+
+.cookieConsentContainer .cookieDesc a{
+    font-family:OpenSans,arial,sans-serif;
+    color:#fff;
+    text-decoration:underline
+}
+
+.cookieConsentContainer .cookieButton a{
+    display:inline-block;
+    font-family:OpenSans,arial,sans-serif;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    margin-top:14px;
+    background:#000;
+    box-sizing:border-box;
+    padding:15px 24px;
+    text-align:center;
+    transition:background .3s
+}
+
+.cookieConsentContainer .cookieButton a:hover{
+    cursor:pointer;
+    background:#3e9b67
+}
+
+@media (max-width:980px){
+    .cookieConsentContainer{
+        bottom:0!important;
+        left:0!important;
+        width:100%!important}
+    }
+/*TERMINOU AQUI*/
+</style>
+<body class=" bg-light">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-dark"> 
+        <a class="navbar-brand" href="index.html" style="color: #f1f1f1;"><b> ANNECT</b></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span style="color: #f1f1f1;" class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <ul  class="navbar-nav mr-auto"> 
+                <li class="nav-item active"> 
+                    <a style="color: #f1f1f1;" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span>
+                    </a> </li> 
+                    <li class="nav-item"> <a style="color: #f1f1f1;" class="nav-link" href="https://mobile.annect.ga">Carteira</a> </li> 
+                    <li class="nav-item dropdown"> <a style="color: #f1f1f1;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Redes Sociais </a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="https://www.facebook.com/joao.afonso.katombela">Facebook</a>
+                            <a class="dropdown-item" href="https://twitter.com/joao_katumbela">Twitter</a> 
+                            <div class="dropdown-divider"></div> 
+                            <a  class="dropdown-item" href="https://linkedin.com/joao-afonso-katombela">LinkedIn</a> 
+                        </div> 
+                    </li> <li class="nav-item"> <a style="color: #f1f1f1;" class="nav-link disabled" href="#">Annect Wallet</a> </li> 
+                    </ul>
+                     <form method="post" action="inscreverse.php" class="form-inline my-2 my-lg-0"> 
+                         <input class="form-control mr-sm-2" name="msg_anonimo" type="search" placeholder="Feed anônimo" aria-label="Search"> 
+                         <button class="btn btn-outline-success my-2 my-sm-0" name="anonimo" type="Enviar">Enviar</button>
+                         </form>
+                         </div> 
+    </nav>
+  
+    <div class="row nav  text-center bg-dark">
+        <div class="col-lg-2">
+            <img src="img/icon1.jpg" width="60px" height="60px" alt="annectwallet">
+        </div>
+        <div class="col-lg-8">
+           <a href="http://mobile.annect.ga"><h3><b> Annect - Wallet</b></h3></a> 
+        </div>
+    </div>
+
+
+    <main class="container">
+    
+
+    <div class="row">
+        <div class="col-md-9 ">
+            <br>
+            <h4>Aprenda do básico ao avançado sobre cryptos gratuitamente</h4>
+            <hr>
+           
+
+            <div class="row">
+
+                <div class="col-lg-6 text-center col-sm-3">
+                    
+            <img src="img/bitcoin.jpeg" class="banner" width="40%" height="60%" alt="">
+        <br><figcaption><b> BitCoin</b></figcaption>        
+        </div>
+
+                <div class="col-lg-6 col-sm-9">
+                    <br>
+                    <p>No âmbito do surgimento de várias tecnologias em blockchais e o interesse da comunidade Angolana correlação às cryptos e o mundo digital,a Annect Wallet vai disponibilizar cursos, tanto para os que já fazem parte quanto aos que pretendem mergulhar nesse mundo digital!</p>
+                </div>
+            </div>
+            <center>
+                <form action="inscreverse.php" method="post">
+            <input type="email" name="email_insc" placeholder="Inscreva-se agora (email)" id="email" class="email2">
+<button type="submit" name="insc" class="btn btn-danger btn-sm insc" id="insc" data-toggle="modal" datatarget="#myModal">Entrar no curso</button>
+        </form>
+            </center>
+<hr>
+<b class="b">
+    Cursos que serão ministrados na Annect :</b>
+    <br>
+<div class="row">
+    <div class="col-sm-6 ">
+        <div class="card text-center">
+            <div class="card-tittle"><br>
+                <img src="img/icon1.jpg" width="50px" height="50px" alt="annectwallect">
+               <h5> Carteira Annect Wallet</h5>
+            </div>
+            <div class="card-body">
+                Carteira de armazenamento de cryptos, suporte ao PayPal, AirTM, Payoneer, AdvCash, Payeer, dólares e euros para saques em território nacional, teste a versão beta do APP
+                <br>
+                <button class="btn btn-success">Brevemente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 ">
+    <div class="card text-center">
+        <div class="card-tittle"><br>
+            <img src="img/intense.jpg" width="50px" height="50px" alt="annectwallect">
+           <h5> INTENSE PEOPLE</h5>
+        </div>
+        <div class="card-body">
+            Conheça a INTENSE PEOPLE, uma companhia de escritores Angolanos, seus livros já abrangiram o exterior e estão a venda em plataformas internacionais, <b>Zennit Brocca</b>, escritor da mesma em celebração com a parceria com...
+            <br>
+            <a href="intensepeople.html"><button class="btn btn-outline-warning">Ler Mais</button></a>
+        </div>
+    </div>
+</div>
+<div class="col-sm-6 ">
+    <div class="card text-center">
+        <div class="card-tittle"><br>
+            <img src="img/capa-1.png" width="60px" height="70px" alt="annectwallect">
+           <h5> Cryptos - Introdução</h5>
+        </div>
+        <div class="card-body">
+            Este é o primeiro E-Book desta série, neste livro contém connceitos definições , em suma o necessário para começar e estar dentro do assunto<br>
+           <a href="cryptos-1.pdf"> <button class="btn btn-success">Baixar E-Book</button></a>
+        </div>
+    </div>
+</div>
+    <div class="col-sm-6 ">
+        <div class="card text-center">
+            <div class="card-tittle"><br>
+                <img src="img/capa-2.png" width="60px" height="70px" alt="annectwallect">
+               <h5> Cryptos - primeiros passos</h5>
+            </div>
+            <div class="card-body">
+                Após o E-Book introdução às cryptos já lançado, segue este E-Book onde se mostra os primeiros passos e começar a ganhar ou investir
+                <br>
+               <a href="cryptos-2.pdf"> <button class="btn btn-success">Baixar E-Book</button></a>
+            </div>
+        </div>
+    </div>
+<div class="col-sm-6 ">
+    <div class="card text-center">
+        <div class="card-tittle"><br>
+            <img src="img/free-tag.png" width="40px" height="30px" alt="">
+           <h5> Crypto Activos - Iniciante</h5>
+        </div>
+        <div class="card-body">
+            Este curso será disponibilizado de forma gratuita apenas para os incsritos, pois será ministrado 3 aulas por semana
+            <br>
+            <a href="mailto:annectwallet@gmail.com"></a><button  class="btn btn-danger" disabled>Curso Bloqueado</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-6 ">
+    <div class="card text-center">
+        <div class="card-tittle">
+            <br>
+            <img src="img/free-tag.png" width="40px" height="30px" alt="">
+           <h5> Programa de aceleração de negocios</h5>
+        </div>
+        <div class="card-body">
+            Este programa visa testar soluções de ideias de negocios/empreendedores gratuitamente que tenham feito o curso de empreendedor PRO
+            <br>
+            <a href="https://facebook.com/joao.afonso.katombela"><button class="btn btn-outline-success">Disponível</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-6">
+    <div class="card text-center">
+        <div class="card-tittle">
+            <br>
+            <img src="img/free-tag.png" width="40px" height="30px" alt="">
+           <h5> Carteiras Digitais</h5>
+        </div>
+        <div class="card-body">
+            Você que está começando agora com cryptos e carteiras digitais peça suporte na Annect gratuitamente na criação e acompanhamento de carteias digitais (PayPal, AirTM, Payoneer, Scrill, AdvCash, Wise[pago] etc..) e cryptos, clique no link para solicitar e mencione o tipo de conta. O prazo é 1 dia contando com o numero de entradas
+            <br>
+            <a href="login_register_page.php"><button class="btn btn-outline-success">Solicitar(disponível)</button></a>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="col-sm-6">
+    <div class="card text-center">
+        <div class="card-tittle">
+            <br>
+           <h5> Curso empreendedor Pro - EMPRO</h5>
+        </div>
+        <div class="card-body">
+           Empreendedor Pro (EMPRO) é o treinamento de empreendedorismo focado nas pessoas, no empreendedor... você sai de um empreendedor amador para proficional (PRO). <br>Custo: <span class="preco">25.000kzs</span>
+            <br>
+            <a href="https://facebook.com/joao.afonso.katombela"><button class="btn btn-outline-primary">Fazer Parte</button></a>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="col-sm-6">
+    <div class="card text-center">
+        <div class="card-tittle">
+            <br>
+
+            <img src="img/free-tag.png" width="40px" height="30px" alt="">
+           <h5> Crypto Activos - Iniciante</h5>
+        </div>
+        <div class="card-body">
+            Este curso será disponibilizado de forma gratuita apenas para os incsritos, pois será ministrado 3 aulas por semana
+            <br>
+            <a href="mailto:annectwallet@gmail.com"></a><button  class="btn btn-danger" disabled>Curso Bloqueado</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="col-sm-6">
+    <div class="card text-center">
+        <div class="card-tittle">
+            <br>
+            <img src="img/free-tag.png" width="40px" height="30px" alt="">
+           <h5>Ganhar Tokens no Telegram</h5>
+        </div>
+        <div class="card-body">
+            Este curso será disponibilizado de forma gratuita apenas para os incsritos, pois será ministrado 3 aulas por semana
+            <br>
+            <a href="mailto:annectwallet@gmail.com"></a><button  class="btn btn-danger" disabled>Curso Bloqueado</button>
+        </div>
+    </div>
+</div>
+<br>
+
+
+        </div>
+</div>
+
+        <div class="col-md-3 form text-center">
+<br> <b><div id="timer"></div></b>
+<form action="increverse.php" method="get">
+            <h5 class="h5">curso gratuito de Crypto - Inscreva se</h5>
+            <input type="email" name="email" placeholder="Insira o seu email" id="email" class="email">
+    <button type="submit" name="insc" class="btn btn-info btn-sm" data-toggle="modal" datatarget="#myModal">Inscrever-se</button>
+    </form><br><br><br>
+    <button class="btn btn-warning" onclick="curso()">Comprar um curso</button> <button onclick="curso()" class="btn btn-success">Vender meu curso</button>
+<br> <a href="mailto:annectwallect@gmail.com" onclick="disp()">Disponibilizar um curso gratuitamente</a>
+<br> <a href="https://www.facebokk.com/joao.afonso.katomblela" onclick="disp()">Quero um Website</a>
+    <hr>
+    <h5>Comentarios: </h5>
+    <form action="#" method="post"><br>
+        <textarea name="pub" id="texto" placeholder="Deixe um comentario" disabled cols="18" rows="2" class="texto"></textarea>
+  <br><button type="submit" class="comentarr">Comentar</button>
+    </form>
+  <br>
+</div>
+<br>      </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          <br>
+    <h5>Comentarios: </h5>
+    <div class="pt-4 comentario">
+        <b>Amaral André</b>
+        <p>Já é um bom avanço estar a disponibilizar se pra dar suporte aos que precisam! Continuem assim<b class="tag">  #Annect</b></p>
+    </div> <br></div>
+          <div class="carousel-item">
+            
+    <h5>Comentarios: </h5>
+    <div class="pt-4 comentario">
+        <b>João Afonso Katumbela</b>
+        <p>Sendo um dos dev. da plataforma sei que há muito a melhorar! então vamos actualizando sempre, mesmo após o lançamento que será em janeiro (este). Espero que recebam bem o projecto e que ajude o bastante<b class="tag">  #Annect</b></p>
+    </div>
+
+<br></div>
+          <div class="carousel-item">
+          
+    <h5>Comentarios: </h5>
+    <div class="pt-4 comentario">
+        <b>Abraão Lopez</b>
+        <p>Grande Projecto, Esperando pelo lançamento da carteira! <b class="tag">#Annect</b></p>
+    </div><br> </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br><br>
+   </main>
+   
+  <br>
+  <center>  <div class="formulario" data-aos="fade-right">
+      <h4 class="til ">Entre em contato connosco</h4>
+        <form action="inscreverse.php" class="form2 mt-4" method="post">
+          <input type="text" name="email" id="" class="visitante" placeholder="Seu nome/Email" required>
+          <input type="text" name="msg" id="message" cols="30" rows="1.5"  placeholder="Sua Mensagem" required>
+          <button type="submit" name="msg" class="button rounded-sussess">Enviar</button>
+        </form>
+        <h5 style="color: rgb(199, 207, 247);" class="til">Localização</h5>
+        <p style="color: rgb(142, 152, 196);">Estamos localizados no Bairro Palanca , tanto quanto no Talatona</p>
+        <br>
+        </div>
+  </center>
+  
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+   
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <a href="http://facebook.com/joao.afonso.katombela">Facebook</a><br>
+                <a href="http://twitter.com/joao_katumbela">Twitter</a><br>
+                <a href="contacto.html">Contacto</a><br>
+                <a href="sobre.html">Sobre Nós</a><br>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+                <a href="http://linkedin.com/joao-afonso-katombela">LinkedIn</a><br>
+                <a href="http://github.com/katumbela">GitHub</a><br>
+                <a href="mailto:annectwallet@gmail.com">annectwallet@gmail.com</a><br>
+                <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+            
+            </div>
+        </div>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://www.annect.ga/"> www.annect.ga </a> <a href="politicas_de_privacidade.html">Politicas de Privacidade</a> | Made By: <a href="http://facebook.com/joao.afonso.katumbela">Joao Afonso Katombela</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+<script>
+    var purecookieTitle="Cookies.",
+    purecookieDesc="ao utilizar a nossa plataforma você concorda automaticamente com as nossa ",
+    purecookieLink='<a href="http://wwww.annect.ga/politicas_de_cookies.html" target="_blank">politicas de privacidade</a>',
+    purecookieButton="Entendido";
+    function pureFadeIn(e,o){
+        var i=document.getElementById(e);
+        i.style.opacity=0,
+        i.style.display=o||"block",
+        function e(){
+            var o=parseFloat(i.style.opacity);
+            (o+=.02)>1||(i.style.opacity=o,requestAnimationFrame(e))
+        }()
+    }
+    
+    function pureFadeOut(e){
+        var o=document.getElementById(e);
+        o.style.opacity=1,
+        function e(){(o.style.opacity-=.02)<0?o.style.display="none":requestAnimationFrame(e)}()}
+        function setCookie(e,o,i){var t="";
+        if(i){
+            var n=new Date;
+            n.setTime(n.getTime()+24*i*60*60*1e3),
+            t="; expires="+n.toUTCString()
+        }document.cookie=e+"="+(o||"")+t+"; path=/"}
+        function getCookie(e){for(var o=e+"=",i=document.cookie.split(";"),
+        t=0;t<i.length;
+        t++){
+            for(
+                var n=i[t];" "==n.charAt(0);
+                )n=n.substring(1,n.length);
+                if(
+                    0==n.indexOf(o))return n.substring(o.length,n.length)
+                }return null}
+                function eraseCookie(e){document.cookie=e+"=; Max-Age=-99999999;"}
+                function cookieConsent(){getCookie("purecookieDismiss")||(document.body.innerHTML+='<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>'+purecookieTitle+'</a></div><div class="cookieDesc"><p>'+purecookieDesc+" "+purecookieLink+'</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">'+purecookieButton+"</a></div></div>",pureFadeIn("cookieConsentContainer"))}
+                function purecookieDismiss(){setCookie("purecookieDismiss","1",7),pureFadeOut("cookieConsentContainer")}
+                window.onload=function(){cookieConsent()};
+                </script>
+    
+</body>
+</html>
